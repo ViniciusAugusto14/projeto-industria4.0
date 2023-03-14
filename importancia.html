@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Importância da Indústria 4.0</title>
+</head>
+<body>
+    <header class="fixo">
+        <div class="logo">
+             <h1>Indústria 4.0</h1>
+         </div>   
+    </header>
+    <figure>
+        <img class="img_impor" src="img/industria-4.0-8-etapas-da-agenda-brasileira-para.png" alt="">
+    </figure>
+    <section id="Botões">
+        <script>
+                // associo o evento keydown
+        document.addEventListener('keydown', function (event) {
+        // se for a tecla <, "clica" o elemento "ant-pg"
+        if (event.key === '<') {
+            console.log("pressinaoda \<");
+            document.getElementById('ant-pg').click();
+        }
+        // se for a tecla >, "clica" o elemento "prox-pg"
+        if (event.key === '>') {
+            console.log("pressionada \>");
+            document.getElementById('prox-pg').click();
+        }
+        });
+
+
+        function clicou(link) {
+            window.location.href = 'form.html'
+        }
+        function voltou(link){
+                window.location.href = 'revoluçao.html'
+            }
+        </script>
+        <h1>Importância da Indústria 4.0</h1>
+        <p>De certa forma, a indústria 4.0 é um movimento natural de transformação da sociedade.
+
+            Afinal, de tempos em tempos, há a evolução dos comportamentos, que exige o acompanhamento dos setores.
+            
+            Nesse sentido, vale reforçar que a indústria 4.0 não abrange apenas as unidades fabris, mas, sim, todo o ecossistema industrial.
+            
+            O cenário é favorável à agilidade, autonomia e eficiência.
+            
+            Isso sem falar que abre espaço para novas oportunidades de negócios.
+            
+            Até por essa razão, como mencionamos no início deste artigo, gestores e empresários devem acompanhar a modernização.
+            
+            Esse salto tecnológico é, portanto, necessário para que tenhamos uma realidade mais condizente com as nossas necessidades.
+            
+            De fato, as tecnologias estão aí para facilitar as nossas vidas.
+            
+            Temos que olhar para elas com uma visão positiva e aprender como explorar todo o potencial existente.</p>
+            <p>Para Poder navegar pra Formulario Da Indústria 4.0 aperte ">" e pra Voltar "<"</p>
+        <div class="botao1">
+            <a href="#" id="ant-pg" onclick="voltou(this)">
+                <div class="botao">
+                    <p>Voltar</p>
+                </div>
+            </a>
+        </div>
+        <div class="botao2">
+            <a href="#" id="prox-pg" onclick="clicou(this)">
+                <div class="botao">
+                    <p>Avançar</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

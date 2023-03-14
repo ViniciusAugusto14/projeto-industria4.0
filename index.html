@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Mudança de Paginas</title>
+</head>
+<body>
+    <header class="fixo">
+        <div class="logo">
+             <h1>Indústria 4.0</h1>
+         </div>
+    </header>
+    <figure class="banner">
+        <img class="img_topo" src="img/download.png" alt="">
+     </figure>
+     <h1>O que é Indústria 4.0</h1>
+     <p>Indústria 4.0 é um conceito que engloba automação e tecnologia da informação, além das principais inovações tecnológicas desses campos.
+
+        Tudo isso aplicado à manufatura – entendendo o termo como sendo a transformação de matérias-primas em produtos de valor agregado.
+        
+        Pois manufatura, junção das palavras “mão” e “acabamento” em latim, designava um trabalho artesanal, feito à mão.
+        
+        O que acontece é que a indústria é incompatível com a ideia de fazer as coisas de forma manual.</p>
+        <p>Mesmo assim, continuamos avançando na automação, que é a capacidade dessas máquinas trabalharem sem nenhum operador humano no comando.
+
+            A robótica, com sistemas previamente programados para que os equipamentos desempenhem determinadas funções sozinhos, também não é muito recente.
+            
+            O que a indústria 4.0 traz é o salto tecnológico de elevar essa automação à máxima potência, permitindo aos robôs desempenharem funções cada vez mais complexas.
+            
+            E não estamos falando apenas do operacional, como soldar duas placas de aço, mas também de tarefas que pensávamos serem exclusivas de nosso intelecto.
+            
+            São algoritmos que fazem as máquinas analisarem dados em uma velocidade que um humano não conseguiria em uma vida inteira.
+            
+            No final, podemos dizer que a indústria 4.0 é a realidade na qual a tecnologia industrial está cada vez mais eficiente: mais inteligente, mais rápida e mais precisa.</p>
+            <p>Para Poder navegar pra historia aperte ">" e pra Voltar "<"</p>
+    <section id="Botões">
+        <script>
+        
+                // associo o evento keydown
+        document.addEventListener('keydown', function (event) {
+        // se for a tecla <, "clica" o elemento "ant-pg"
+        if (event.key === '<') {
+            console.log("pressinaoda \<");
+            document.getElementById('ant-pg').click();
+        }
+        // se for a tecla >, "clica" o elemento "prox-pg"
+        if (event.key === '>') {
+            console.log("pressionada \>");
+            document.getElementById('prox-pg').click();
+        }
+        });
+
+
+        function clicou(link) {
+            window.location.href = 'historia.html'
+        }
+        </script>
+        <div class="botao_">
+            <a href="#" id="prox-pg" onclick="clicou(this)">
+                <div class="botao">
+                    <p>Avançar</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

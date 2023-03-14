@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>4º Revolução Industrial</title>
+</head>
+<body>
+    <header class="fixo">
+        <div class="logo">
+             <h1>Indústria 4.0</h1>
+         </div>   
+    </header>
+    <figure>
+        <img class="img_rev" src="img/industria-4.0-qual-e-importancia-da.png" alt="">
+    </figure>
+    <section id="Botões">
+        <script>
+        
+                // associo o evento keydown
+        document.addEventListener('keydown', function (event) {
+        // se for a tecla <, "clica" o elemento "ant-pg"
+        if (event.key === '<') {
+            console.log("pressinaoda \<");
+            document.getElementById('ant-pg').click();
+        }
+        // se for a tecla >, "clica" o elemento "prox-pg"
+        if (event.key === '>') {
+            console.log("pressionada \>");
+            document.getElementById('prox-pg').click();
+        }
+        });
+    
+    
+        function clicou(link) {
+            window.location.href = 'importancia.html'
+        }
+        function voltou(link){
+            window.location.href = 'historia.html'
+        }
+        </script>
+        <h1>O Que É A Quarta Revolução Industrial?</h1>
+        <p>A indústria 4.0 também é frequentemente chamada de Quarta Revolução Industrial. Por que esse nome?
+
+            Primeiro, entenda que a palavra “revolução” caracteriza fenômenos em que há uma transformação radical em uma sociedade.
+            
+            Então, não é qualquer novidade no processo de um fabricante que desencadeia uma revolução industrial, e sim uma tendência tecnológica que impacta a produção a nível mundial.
+            
+            Ela não ocorre da noite para o dia. Demora décadas para se consolidar e para ser reconhecida como revolução.
+            
+            Já se fala em automação e Internet das Coisas, por exemplo, há mais tempo do que se fala em Quarta Revolução Industrial e indústria 4.0.
+            
+            A primeira aconteceu em meados do século 18, com o surgimento das máquinas a vapor e ferrovias, substituindo o uso de animais para gerar força.
+            
+            Entre o final do século 19 e início do 20, desenvolveu-se a Segunda Revolução Industrial, com a energia elétrica e a linha de produção criada por Henry Ford, possibilitando a produção em larga escala.
+            
+            A terceira chegou junto com a informática, internet, computadores pessoais e toda a gama de plataformas digitais que modernizou o trabalho em fábricas e escritórios.
+            
+            Em cada uma dessas revoluções, as máquinas passaram a disputar ou roubar o protagonismo do homem em várias funções.
+            
+            E é o que acontece hoje também, mas vamos retomar esse assunto mais adiante.</p>
+            <p>Para Poder navegar pra Importançia Da Indústria 4.0 aperte ">" e pra Voltar "<"</p>
+        <div class="botao1">
+            <a href="#" id="ant-pg" onclick="voltou(this)">
+                <div class="botao">
+                    <p>Voltar</p>
+                </div>
+            </a>
+        </div>
+        <div class="botao2">
+            <a href="#" id="prox-pg" onclick="clicou(this)">
+                <div class="botao">
+                    <p>Avançar</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

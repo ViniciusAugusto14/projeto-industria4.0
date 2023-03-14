@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario">
+        <section>
+           <div class="form">
+               <form action="">
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="fname">Nome:</label><br>  
+                       </div>
+                       <div class="col-75">
+                           <input type="text" id="fname" name="fname" placeholder="Digite seu nome"><br>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="lname">Telefone:</label><br>
+                       </div>
+                       <div class="col-75">
+                           <input type="tel" id="lname" name="lname" placeholder="11 99999-9999">
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="Email">Email:</label>
+                       </div>
+                       <div class="col-75">
+                           <input type="email" name="ename" placeholder="Digite seu email">
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="#">Estado: </label> 
+                       </div>
+                       <div class="col-75">
+                           <select name="" id="">
+                               <option value="sp">SP</option>
+                               <option value="rj">RJ</option>
+                               <option value="ba">BA</option>
+                               <option value="mg">MG</option>
+                               <option value="ce">CE</option>
+                           </select>
+                       </div>
+                       <div class="row">
+                           <div class="col-25">
+                               <label for="#">Escreva sua Reclamação</label>  
+                           </div>
+                           <div class="col-75">
+                               <textarea name="#" id="#" cols="50" rows="10"></textarea>
+                           </div>
+                       </div>
+                    <div class="row">
+                      <div class="col-75">
+                         <input type="submit" value="Submit">
+                      </div>
+                   </div> 
+               </form>
+           </div>
+        </section>
+    <section id="Botões"></section>
+    <script>
+     // associo o evento keydown
+      document.addEventListener('keydown', function (event) {
+      // se for a tecla <, "clica" o elemento "ant-pg"
+      if (event.key === '<') {
+          console.log("pressinaoda \<");
+          document.getElementById('ant-pg').click();
+      }
+      // se for a tecla >, "clica" o elemento "prox-pg"
+      if (event.key === '>') {
+          console.log("pressionada \>");
+          document.getElementById('prox-pg').click();
+      }
+      });
+  
+  
+      function voltou(link){
+          window.location.href = 'importancia.html'
+      }
+      </script>
+              <div class="botao1">
+                <a href="#" id="ant-pg" onclick="voltou(this)">
+                    <div class="botao">
+                        <p>Voltar</p>
+                    </div>
+                </a>
+            </div>
+    </section>
+</body>
+</html>

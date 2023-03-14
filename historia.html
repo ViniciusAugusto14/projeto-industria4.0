@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Historia</title>
+</head>
+<body>
+    <header class="fixo">
+        <div class="logo">
+             <h1>Indústria 4.0</h1>
+         </div>
+    </header>
+    <figure class="banner">
+        <img class="img_historia" src="img/industria-4.0-fia-o-que-e-consequencias-impacto.png" alt="">
+     </figure>
+        <script>
+              // associo o evento keydown
+        document.addEventListener('keydown', function (event) {
+        // se for a tecla <, "clica" o elemento "ant-pg"
+        if (event.key === '<') {
+            console.log("pressinaoda \<");
+            document.getElementById('ant-pg').click();
+        }
+        // se for a tecla >, "clica" o elemento "prox-pg"
+        if (event.key === '>') {
+            console.log("pressionada \>");
+            document.getElementById('prox-pg').click();
+        }
+        });
+    
+    
+        function clicou(link) {
+            window.location.href = 'revoluçao.html'
+        }
+        function voltou(link){
+            window.location.href = 'index.html'
+        }
+        </script>
+        <h1>A Historia da Indústria 4.0</h1>
+        <p>Depois de explicar o que é a indústria 4.0, vamos abordar o que está por trás da sua origem.
+
+            Embora as revoluções industriais remetam a passagens registradas séculos atrás, neste caso, o movimento é bastante recente.
+            
+            O marco inicial aponta para uma estratégia adotada pelo governo alemão para o setor industrial no início da segunda década deste milênio.
+            
+            Um grupo de trabalho liderado por Siegfried Dais (Robert Bosch GmbH) e Henning Kagermann (German Academy of Science and Engineering), desenvolveu um projeto que consistia na implementação de soluções tecnológicas em unidades fabris.
+            
+            A ideia era promover a informatização da manufatura e a integração de dados.
+            
+            Em 2011, o grupo mencionou o trabalho durante a Feira de Hannover, na Alemanha.
+            
+            O projeto continuou e, na edição de 2013 da mesma feira, o relatório final sobre a indústria 4.0 foi apresentado, tornando o conceito conhecido a todos nós.
+            
+            Nascia ali a ideia de fábricas inteligentes, nas quais as máquinas e equipamentos podiam tomar decisões com base em dados.</p>
+            <p>Para Poder navegar pra Revoluçao aperte ">" e pra Voltar "<"</p>
+        <section id="Botões">
+        <div class="botao1">
+            <a href="#" id="ant-pg" onclick="voltou(this)">
+                <div class="botao">
+                    <p>Voltar</p>
+                </div>
+            </a>
+        </div>
+        <div class="botao2">
+            <a href="#" id="prox-pg" onclick="clicou(this)">
+                <div class="botao">
+                    <p>Avançar</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
